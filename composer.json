@@ -1,5 +1,5 @@
 {
-    "name": "georgebohnisch/redoubt",
+    "name": "georgebohnisch/redoubt-plus",
     "description": "A resource-level ACL for Laravel 4.",
 	"keywords": ["acl", "resource", "object", "user", "group", "laravel", "laravel4"],
 	"homepage": "https://github.com/georgebohnisch/redoubt-plus",
