@@ -1,13 +1,13 @@
 {
-    "name": "greggilbert/redoubt",
+    "name": "georgebohnisch/redoubt",
     "description": "A resource-level ACL for Laravel 4.",
-	"keywords": ["acl", "resource", "laravel", "laravel4"],
-	"homepage": "http://github.com/greggilbert/redoubt",
+	"keywords": ["acl", "resource", "object", "user", "group", "laravel", "laravel4"],
+	"homepage": "https://github.com/georgebohnisch/redoubt-plus",
 	"license": "MIT",
     "authors": [
         {
-            "name": "Greg Gilbert",
-            "email": "greg@greg-gilbert.com"
+            "name": "George Böhnisch",
+            "email": "george@pixlgeek.com"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Greggilbert\\Redoubt": "src/"
+            "Georgebohnisch\\Redoubt": "src/"
         }
     },
 	"extra": {
