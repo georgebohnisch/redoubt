@@ -1,5 +1,6 @@
-Redoubt
+Redoubt+
 =========
+A fork of [greggilbert/redoubt](https://github.com/greggilbert/redoubt) with a few useful additions.
 
 A resource-level ACL for Laravel 4. Based on and inspired by [lukaszb/django-guardian](https://github.com/lukaszb/django-guardian), an excellent Django library.
 
@@ -12,17 +13,17 @@ Add the following line to the `require` section of `composer.json`:
 ```json
 {
     "require": {
-        "greggilbert/redoubt": "dev-master"
+        "georgebohnisch/redoubt": "dev-master"
     }
 }
 ```
 
 ## Setup
 
-1. Add `Greggilbert\Redoubt\RedoubtServiceProvider` to the service provider list in `app/config/app.php`.
-2. Add `'Redoubt' => 'Greggilbert\Redoubt\Facades\Redoubt',` to the list of aliases in `app/config/app.php`.
-3. If you're using Eloquent, run `php artisan migrate --package=greggilbert/redoubt`.
-4. OPTIONAL: If you plan to override any of the base classes (e.g. User), run `php artisan config:publish greggilbert/redoubt`.
+1. Add `Georgebohnisch\Redoubt\RedoubtServiceProvider` to the service provider list in `app/config/app.php`.
+2. Add `'Redoubt' => 'Georgebohnisch\Redoubt\Facades\Redoubt',` to the list of aliases in `app/config/app.php`.
+3. If you're using Eloquent, run `php artisan migrate --package=georgebohnisch/redoubt`.
+4. OPTIONAL: If you plan to override any of the base classes (e.g. User), run `php artisan config:publish georgebohnisch/redoubt`.
 
 ## Usage
 
@@ -32,10 +33,10 @@ Redoubt uses Laravel's built-in polymorphic relations to handle its associations
 
 ### On resources
 
-Resources need to implement `Greggilbert\Redoubt\Permission\PermissibleInterface`, which defines one method, `getPermissions()`. The method needs to return an array where the key is the permission, and the value is the description:
+Resources need to implement `Georgebohnisch\Redoubt\Permission\PermissibleInterface`, which defines one method, `getPermissions()`. The method needs to return an array where the key is the permission, and the value is the description:
 
 ```php
-class Article implements Greggilbert\Redoubt\Permission\PermissibleInterface
+class Article implements Georgebohnisch\Redoubt\Permission\PermissibleInterface
 {
     public function getPermissions()
     {
@@ -164,4 +165,4 @@ This will return a collection of `User` objects.
 
 ## Extension
 
-Redoubt has a built-in User class, but if you want to extend it to use on your own, either extend `Greggilbert\Redoubt\User\EloquentUser` or implement the `Greggilbert\Redoubt\User\UserInterface` interface. You'll also need to publish the config for the package and change the user model listed there.
+Redoubt has a built-in User class, but if you want to extend it to use on your own, either extend `Georgebohnisch\Redoubt\User\EloquentUser` or implement the `Georgebohnisch\Redoubt\User\UserInterface` interface. You'll also need to publish the config for the package and change the user model listed there.
