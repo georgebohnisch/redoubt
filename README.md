@@ -4,8 +4,6 @@ A fork of [greggilbert/redoubt](https://github.com/greggilbert/redoubt) with a f
 
 A resource-level ACL for Laravel 4. Based on and inspired by [lukaszb/django-guardian](https://github.com/lukaszb/django-guardian), an excellent Django library.
 
-*Note*: this in active development. The interfaces won't change, but there will be more functionality added in within the next few months.
-
 ## Installation
 
 Add the following line to the `require` section of `composer.json`:
