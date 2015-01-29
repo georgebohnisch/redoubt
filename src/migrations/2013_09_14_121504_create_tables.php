@@ -69,11 +69,11 @@ class CreateTables extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('groups');
-		Schema::drop('group_object_permission');
-		Schema::drop('group_user');
-		Schema::drop('permissions');
-		Schema::drop('user_object_permission');
+		Schema::dropIfExists('group_object_permission');
+		Schema::dropIfExists('user_object_permission');
+		Schema::dropIfExists('group_user');
+		Schema::dropIfExists('groups');
+		Schema::dropIfExists('permissions');
 	}
 
 }
