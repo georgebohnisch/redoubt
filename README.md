@@ -11,7 +11,7 @@ Add the following line to the `require` section of `composer.json`:
 ```json
 {
     "require": {
-        "georgebohnisch/redoubt": "dev-master"
+        "georgebohnisch/redoubt-plus": "dev-master"
     }
 }
 ```
@@ -20,8 +20,8 @@ Add the following line to the `require` section of `composer.json`:
 
 1. Add `Georgebohnisch\Redoubt\RedoubtServiceProvider` to the service provider list in `app/config/app.php`.
 2. Add `'Redoubt' => 'Georgebohnisch\Redoubt\Facades\Redoubt',` to the list of aliases in `app/config/app.php`.
-3. If you're using Eloquent, run `php artisan migrate --package=georgebohnisch/redoubt`.
-4. OPTIONAL: If you plan to override any of the base classes (e.g. User), run `php artisan config:publish georgebohnisch/redoubt`.
+3. If you're using Eloquent, run `php artisan migrate --package=georgebohnisch/redoubt-plus`.
+4. OPTIONAL: If you plan to override any of the base classes (e.g. User), run `php artisan config:publish georgebohnisch/redoubt-plus`.
 
 ## Usage
 
