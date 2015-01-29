@@ -74,21 +74,21 @@ class BaseTest extends \Illuminate\Foundation\Testing\TestCase
 	
 	protected function getRedoubt()
 	{
-		$permission             = new Greggilbert\Redoubt\Permission\EloquentProvider('Greggilbert\Redoubt\Permission\Permission');
-		$userObjectPermission   = new Greggilbert\Redoubt\UserObjectPermission\EloquentProvider('Greggilbert\Redoubt\UserObjectPermission\UserObjectPermission');
-		$groupObjectPermission  = new \Greggilbert\Redoubt\GroupObjectPermission\EloquentProvider('Greggilbert\Redoubt\GroupObjectPermission\GroupObjectPermission');
+		$permission             = new Georgebohnisch\Redoubt\Permission\EloquentProvider('Georgebohnisch\Redoubt\Permission\Permission');
+		$userObjectPermission   = new Georgebohnisch\Redoubt\UserObjectPermission\EloquentProvider('Georgebohnisch\Redoubt\UserObjectPermission\UserObjectPermission');
+		$groupObjectPermission  = new \Georgebohnisch\Redoubt\GroupObjectPermission\EloquentProvider('Georgebohnisch\Redoubt\GroupObjectPermission\GroupObjectPermission');
 		
-		return new Greggilbert\Redoubt\Redoubt($permission, $userObjectPermission, $groupObjectPermission);
+		return new Georgebohnisch\Redoubt\Redoubt($permission, $userObjectPermission, $groupObjectPermission);
 	}
 		
 	public function testRedoubt()
 	{
-		$this->assertInstanceOf('Greggilbert\Redoubt\Redoubt', $this->getRedoubt());
+		$this->assertInstanceOf('Georgebohnisch\Redoubt\Redoubt', $this->getRedoubt());
 	}
 	
 }
 
-class Article extends Illuminate\Database\Eloquent\Model implements \Greggilbert\Redoubt\Permission\PermissibleInterface
+class Article extends Illuminate\Database\Eloquent\Model implements \Georgebohnisch\Redoubt\Permission\PermissibleInterface
 {
 	public $timestamps = false;
 	
@@ -102,13 +102,13 @@ class Article extends Illuminate\Database\Eloquent\Model implements \Greggilbert
 	}
 }
 
-class Group extends \Greggilbert\Redoubt\Group\EloquentGroup
+class Group extends \Georgebohnisch\Redoubt\Group\EloquentGroup
 {
 	public $timestamps = false;
 	public $guarded = [];
 }
 
-class User extends \Greggilbert\Redoubt\User\EloquentUser
+class User extends \Georgebohnisch\Redoubt\User\EloquentUser
 {
 	public $timestamps = false;
 	public $guarded = [];
