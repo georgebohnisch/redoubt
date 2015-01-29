@@ -4,31 +4,31 @@ return array(
 	
 	'group' => array(
 		
-		'model' => 'Greggilbert\Redoubt\Group\EloquentGroup',
+		'model' => 'Georgebohnisch\Redoubt\Group\EloquentGroup',
 		
 	),
 	
 	'user' => array(
 		
-		'model' => 'Greggilbert\Redoubt\User\EloquentUser',
+		'model' => 'Georgebohnisch\Redoubt\User\EloquentUser',
 		
 	),
 	
 	'permission' => array(
 		
-		'model' => 'Greggilbert\Redoubt\Permission\Permission',
+		'model' => 'Georgebohnisch\Redoubt\Permission\Permission',
 		
 	),
 
 	'user_object_permission' => array(
 		
-		'model' => 'Greggilbert\Redoubt\UserObjectPermission\UserObjectPermission',
+		'model' => 'Georgebohnisch\Redoubt\UserObjectPermission\UserObjectPermission',
 		
 	),
 	
 	'group_object_permission' => array(
 		
-		'model' => 'Greggilbert\Redoubt\GroupObjectPermission\GroupObjectPermission',
+		'model' => 'Georgebohnisch\Redoubt\GroupObjectPermission\GroupObjectPermission',
 		
 	),
 	

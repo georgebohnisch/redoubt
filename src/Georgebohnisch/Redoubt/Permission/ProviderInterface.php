@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\Permission;
+<?php namespace Georgebohnisch\Redoubt\Permission;
 
 /**
  * Interface for defining Permissions
@@ -8,7 +8,7 @@ interface ProviderInterface
 {
 	/**
 	 * Find a single Permission for a given group, object, and permission
-	 * @param \Greggilbert\Redoubt\Permission\ProviderInterface $permission
+	 * @param \Georgebohnisch\Redoubt\Permission\ProviderInterface $permission
 	 * @param mixed $object
 	 * @return GroupObjectPermission
 	 */

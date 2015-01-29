@@ -1,12 +1,12 @@
-<?php namespace Greggilbert\Redoubt;
+<?php namespace Georgebohnisch\Redoubt;
 
 /**
  * The main Redoubt class
  */
 
-use Greggilbert\Redoubt\Permission\ProviderInterface as PermissionInterface;
-use Greggilbert\Redoubt\UserObjectPermission\ProviderInterface as UserObjectPermissionInterface;
-use Greggilbert\Redoubt\GroupObjectPermission\ProviderInterface as GroupObjectPermissionInterface;
+use Georgebohnisch\Redoubt\Permission\ProviderInterface as PermissionInterface;
+use Georgebohnisch\Redoubt\UserObjectPermission\ProviderInterface as UserObjectPermissionInterface;
+use Georgebohnisch\Redoubt\GroupObjectPermission\ProviderInterface as GroupObjectPermissionInterface;
 
 class Redoubt
 {
@@ -17,9 +17,9 @@ class Redoubt
 	/**
 	 * Create a new Redoubt instance
 	 * 
-	 * @param \Greggilbert\Redoubt\Permission\ProviderInterface $permission
-	 * @param \Greggilbert\Redoubt\UserObjectPermission\ProviderInterface $userObjectPermission
-	 * @param \Greggilbert\Redoubt\GroupObjectPermission\ProviderInterface $groupObjectPermission
+	 * @param \Georgebohnisch\Redoubt\Permission\ProviderInterface $permission
+	 * @param \Georgebohnisch\Redoubt\UserObjectPermission\ProviderInterface $userObjectPermission
+	 * @param \Georgebohnisch\Redoubt\GroupObjectPermission\ProviderInterface $groupObjectPermission
 	 */
 	public function __construct(
 			PermissionInterface $permission,
@@ -361,7 +361,7 @@ class Redoubt
 	 *		2. to find all permissions for a user on a specific model
 	 *		3. to find all permissions for a user on a specific model for a given codename
 	 * 
-	 * @param \Greggilbert\Redoubt\User\UserInterface|null $user
+	 * @param \Georgebohnisch\Redoubt\User\UserInterface|null $user
 	 * @param Object|null $object
 	 * @param string|null $permission
 	 * @return mixed
@@ -395,7 +395,7 @@ class Redoubt
 	/**
 	 * Returns all permissions for a given user
 	 * 
-	 * @param \Greggilbert\Redoubt\User\UserInterface $user
+	 * @param \Georgebohnisch\Redoubt\User\UserInterface $user
 	 * @return mixed
 	 */
 	protected function getPermissionsByUser(User\UserInterface $user)

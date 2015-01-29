@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\Facades;
+<?php namespace Georgebohnisch\Redoubt\Facades;
 
 /**
  * Facade for Redoubt

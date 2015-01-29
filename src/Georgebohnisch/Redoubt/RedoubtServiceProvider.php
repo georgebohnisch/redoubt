@@ -1,10 +1,13 @@
-<?php namespace Greggilbert\Redoubt;
+<?php namespace Georgebohnisch\Redoubt;
 
 /**
  * Service provider for Redoubt
  * 
  * @author Greg Gilbert
  * @link https://github.com/greggilbert
+ *
+ * @author George Böhnisch
+ * @link https://github.com/georgebohnisch
  */
 
 use Illuminate\Support\ServiceProvider;
@@ -25,11 +28,11 @@ class RedoubtServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('greggilbert/redoubt');
+		$this->package('Georgebohnisch/redoubt');
 
-		$groupModel		 = $this->app['config']->get('redoubt::group.model',		'Greggilbert\Redoubt\Group\EloquentGroup');
-		$userModel		 = $this->app['config']->get('redoubt::user.model',			'Greggilbert\Redoubt\Group\EloquentUser');
-		$permissionModel = $this->app['config']->get('redoubt::permission.model',	'Greggilbert\Redoubt\Permission\Permission');
+		$groupModel		 = $this->app['config']->get('redoubt::group.model',		'Georgebohnisch\Redoubt\Group\EloquentGroup');
+		$userModel		 = $this->app['config']->get('redoubt::user.model',			'Georgebohnisch\Redoubt\Group\EloquentUser');
+		$permissionModel = $this->app['config']->get('redoubt::permission.model',	'Georgebohnisch\Redoubt\Permission\Permission');
 		
 		$this->app->bind('redoubt.group', $groupModel);
 		$this->app->bind('redoubt.user', $userModel);
@@ -85,7 +88,7 @@ class RedoubtServiceProvider extends ServiceProvider {
 	{
 		$this->app['redoubt.user_object_permission'] = $this->app->share(function($app)
 		{
-			$model = $app['config']->get('redoubt::user_object_permission.model', 'Greggilbert\Redoubt\UserObjectPermission\UserObjectPermission');
+			$model = $app['config']->get('redoubt::user_object_permission.model', 'Georgebohnisch\Redoubt\UserObjectPermission\UserObjectPermission');
 			
 			return new UserObjectPermission\EloquentProvider($model);
 		});
@@ -96,7 +99,7 @@ class RedoubtServiceProvider extends ServiceProvider {
 	{
 		$this->app['redoubt.group_object_permission'] = $this->app->share(function($app)
 		{
-			$model = $app['config']->get('redoubt::group_object_permission.model', 'Greggilbert\Redoubt\GroupObjectPermission\GroupObjectPermission');
+			$model = $app['config']->get('redoubt::group_object_permission.model', 'Georgebohnisch\Redoubt\GroupObjectPermission\GroupObjectPermission');
 			
 			return new GroupObjectPermission\EloquentProvider($model);
 		});

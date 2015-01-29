@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\User;
+<?php namespace Georgebohnisch\Redoubt\User;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -31,7 +31,7 @@ class EloquentUser extends Eloquent implements UserInterface
 		
 		foreach($groups as $group)
 		{
-			if($group instanceof \Greggilbert\Redoubt\Group\GroupInterface)
+			if($group instanceof \Georgebohnisch\Redoubt\Group\GroupInterface)
 			{
 				$group_ids[] = $group->id;
 			}

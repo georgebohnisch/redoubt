@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\UserObjectPermission;
+<?php namespace Georgebohnisch\Redoubt\UserObjectPermission;
 
 class EloquentProvider implements ProviderInterface
 {

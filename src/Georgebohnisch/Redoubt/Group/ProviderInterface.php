@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\Group;
+<?php namespace Georgebohnisch\Redoubt\Group;
 
 /**
  * Interface for defining Groups

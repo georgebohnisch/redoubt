@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\GroupObjectPermission;
+<?php namespace Georgebohnisch\Redoubt\GroupObjectPermission;
 
 interface GroupObjectPermissionInterface
 {

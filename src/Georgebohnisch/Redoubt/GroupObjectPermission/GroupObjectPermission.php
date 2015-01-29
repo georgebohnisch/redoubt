@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\GroupObjectPermission;
+<?php namespace Georgebohnisch\Redoubt\GroupObjectPermission;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

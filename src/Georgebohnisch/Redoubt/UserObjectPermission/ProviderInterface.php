@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\UserObjectPermission;
+<?php namespace Georgebohnisch\Redoubt\UserObjectPermission;
 
 /**
  * Interface for defining UserObjectPermissions
@@ -8,16 +8,16 @@ interface ProviderInterface
 {
 	/**
 	 * Find a single UserObjectPermission for a given user, object, and permission
-	 * @param \Greggilbert\Redoubt\User\UserInterface $user
+	 * @param \Georgebohnisch\Redoubt\User\UserInterface $user
 	 * @param mixed $object
-	 * @param \Greggilbert\Redoubt\Permission\ProviderInterface $permission
+	 * @param \Georgebohnisch\Redoubt\Permission\ProviderInterface $permission
 	 * @return UserObjectPermission
 	 */
 	public function findPermission($user, $object, $permission);
 
 	/**
 	 * Gets any UserObjectPermissions for a user, an object, or an object's permission
-	 * @param \Greggilbert\Redoubt\User\UserInterface $user
+	 * @param \Georgebohnisch\Redoubt\User\UserInterface $user
 	 * @param mixed|string|null $object
 	 * @param string|null $permission
 	 * @return \IteratorAggregate
@@ -26,7 +26,7 @@ interface ProviderInterface
 	
 	/**
 	 * Find permissions by user
-	 * @param \Greggilbert\Redoubt\User\UserInterface $user
+	 * @param \Georgebohnisch\Redoubt\User\UserInterface $user
 	 * @return array(UserObjectPermission)
 	 */
 	public function findByUser($user);

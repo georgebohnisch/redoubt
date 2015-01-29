@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\Permission;
+<?php namespace Georgebohnisch\Redoubt\Permission;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

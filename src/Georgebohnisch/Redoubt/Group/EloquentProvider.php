@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\Group;
+<?php namespace Georgebohnisch\Redoubt\Group;
 
 class EloquentProvider implements ProviderInterface
 {

@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\GroupObjectPermission;
+<?php namespace Georgebohnisch\Redoubt\GroupObjectPermission;
 
 /**
  * Interface for defining GroupObjectPermissions
@@ -9,14 +9,14 @@ interface ProviderInterface
 	/**
 	 * Gets all GroupObjectPermisisons for a given permission on a given object
 	 * @param mixed $object
-	 * @param \Greggilbert\Redoubt\Permission\ProviderInterface $permission
+	 * @param \Georgebohnisch\Redoubt\Permission\ProviderInterface $permission
 	 * @return \IteratorAggregate
 	 */
 	public function findPermissions($object, $permission);
 	
 	/**
 	 * Gets any GroupObjectPermissions for a list of groups, an object, or an object's permission
-	 * @param array(\Greggilbert\Redoubt\Group\GroupInterface) $groups
+	 * @param array(\Georgebohnisch\Redoubt\Group\GroupInterface) $groups
 	 * @param mixed|string|null $object
 	 * @param string|null $permission
 	 * @return \IteratorAggregate
@@ -25,9 +25,9 @@ interface ProviderInterface
 	
 	/**
 	 * Gets a single GroupObjectPermission for a given group, object, and permission
-	 * @param \Greggilbert\Redoubt\Group\GroupInterface $group
+	 * @param \Georgebohnisch\Redoubt\Group\GroupInterface $group
 	 * @param mixed $object
-	 * @param \Greggilbert\Redoubt\Permission\ProviderInterface $permission
+	 * @param \Georgebohnisch\Redoubt\Permission\ProviderInterface $permission
 	 * @return GroupObjectPermission
 	 */
 	public function findPermission($group, $object, $permission);
@@ -42,7 +42,7 @@ interface ProviderInterface
 	
 	/**
 	 * Find permissions by groups
-	 * @param array(\Greggilbert\Redoubt\Group\GroupInterface) $groups
+	 * @param array(\Georgebohnisch\Redoubt\Group\GroupInterface) $groups
 	 * @return array(GroupObjectPermission)
 	 */
 	public function findByGroups($groups);

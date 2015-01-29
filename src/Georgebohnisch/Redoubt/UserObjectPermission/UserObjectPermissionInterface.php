@@ -1,4 +1,4 @@
-<?php namespace Greggilbert\Redoubt\UserObjectPermission;
+<?php namespace Georgebohnisch\Redoubt\UserObjectPermission;
 
 interface UserObjectPermissionInterface
 {
